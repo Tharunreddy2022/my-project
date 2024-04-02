@@ -1,0 +1,74 @@
+.main {
+  display: flex;
+  background-color: #f0f0f0;
+}
+
+.left-container {
+  /* Set the desired width for the left container */
+}
+
+.mid-container {
+  flex-grow: 1;
+  /* Allow the mid container to take up remaining space */
+  padding-top: 20px; /* Decrease the padding for a smaller height */
+}
+
+/* Additional styling for your elements */
+.hp_slide {
+  width: 40%;
+  background: white;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.hp_range {
+  width: 0;
+  background: black;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-solid {
+  padding: 10px;
+}
+
+#duration,
+#currttime {
+  display: inline;
+  margin: 0;
+  font-size: 14px;
+  padding:10px;
+}
+
+.player-img {
+  display: flex;
+  float: left;
+}
+
+.song-img {
+  height: 65px;
+  width: 65px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+h5 {
+  padding-left: 100px;
+  margin-bottom: 6px;
+}
+
+.description {
+  padding-left: 100px;
+  margin-top: 6px;
+}

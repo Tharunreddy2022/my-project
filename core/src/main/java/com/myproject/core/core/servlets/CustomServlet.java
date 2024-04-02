@@ -24,24 +24,24 @@ import java.io.PrintWriter;
                 "sling.servlet.paths="+ "/bin/mydata"
         })
 public class CustomServlet extends SlingAllMethodsServlet {
-
-    @Override
-    protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
-        // Make your external API call here
-        String apiResponse = makeApiCall();
-        // Set response content type to JSON
-        response.setContentType("application/json");
-        response.setCharacterEncoding("UTF-8");
-
-        // Write the API response to the output stream
-        PrintWriter out = response.getWriter();
-        out.print(apiResponse);
-        out.flush();
-    }
-
-    private String makeApiCall() {
-        HttpClient httpClient = HttpClients.createDefault();
-        HttpGet getRequest = new HttpGet("http://api.example.com/data");
-        return getRequest.toString();
-    }
+//
+//    @Override
+//    protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
+//        // Make your external API call here
+//        String apiResponse = makeApiCall();
+//        // Set response content type to JSON
+//        response.setContentType("application/json");
+//        response.setCharacterEncoding("UTF-8");
+//
+//        // Write the API response to the output stream
+//        PrintWriter out = response.getWriter();
+//        out.print(apiResponse);
+//        out.flush();
+//    }
+//
+//    private String makeApiCall() {
+//        HttpClient httpClient = HttpClients.createDefault();
+//        HttpGet getRequest = new HttpGet("http://api.example.com/data");
+//        return getRequest.toString();
+//    }
 }
