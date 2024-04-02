@@ -9,7 +9,7 @@ audioel.addEventListener("timeupdate", function() {
    $('.hp_range').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear')
 });
 
-function playpause(){
+functionmain{
     if(cntrlBut.classList.contains("fa-pause")){
          audioel.pause();
          cntrlBut.classList.remove("fa-pause");
