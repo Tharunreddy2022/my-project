@@ -46,11 +46,11 @@ public class SimpleServlet extends SlingSafeMethodsServlet {
 
     private static final long serialVersionUID = 1L;
 
-    @Override
-    protected void doGet(final SlingHttpServletRequest req,
-            final SlingHttpServletResponse resp) throws ServletException, IOException {
-        final Resource resource = req.getResource();
-        resp.setContentType("text/plain");
-        resp.getWriter().write("Title = " + resource.getValueMap().get(JcrConstants.JCR_TITLE));
-    }
+//    @Override
+//    protected void doGet(final SlingHttpServletRequest req,
+//            final SlingHttpServletResponse resp) throws ServletException, IOException {
+//        final Resource resource = req.getResource();
+//        resp.setContentType("text/plain");
+//        resp.getWriter().write("Title = " + resource.getValueMap().get(JcrConstants.JCR_TITLE));
+//    }
 }

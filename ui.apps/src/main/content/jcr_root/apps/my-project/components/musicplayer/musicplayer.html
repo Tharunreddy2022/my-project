@@ -1,0 +1,29 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<div  data-sly-use.model="com.myproject.core.core.models.MusicModel">
+    <div class="main">
+        <div class="left-container">
+            <div class="player-img"><img class="song-img" src="${model.img_path}" alt="Song Image"></div>
+            <h5>${model.title}</h5>
+            <p class="description">description<p>
+        </div>
+        <div class="mid-container">
+            <audio id="audio" src="${model.source_path}"></audio>
+            <div class="controls">
+                <i class="fa-solid fa-backward"></i>
+                <i id="play" class="fa-solid fa-play" onclick="playpause()"></i>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+            <div class="center">
+                <p id="currttime">0:0</p>
+                <div class="hp_slide">
+                    <div class="hp_range"></div>
+                </div>
+                <p id="duration">:-:</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
