@@ -1,15 +1,16 @@
-var audioel = document.getElementById('audio'); 
+var audioel = document.getElementById('audio');
 const cntrlBut = document.getElementById("play");
 audioel.addEventListener("timeupdate", function() {
     var currentTime = audioel.currentTime;
-    console.log("******");
-    console.log(currentTime);
+    document.getElementById("currttime").innerHTML = (currentTime /60).toFixed(1);
+
     var duration = audioel.duration;
-    console.log(duration);
+    document.getElementById("duration").innerHTML = (duration / 60).toFixed(1);
+
    $('.hp_range').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear')
 });
 
-functionmain{
+function playpause(){
     if(cntrlBut.classList.contains("fa-pause")){
          audioel.pause();
          cntrlBut.classList.remove("fa-pause");
